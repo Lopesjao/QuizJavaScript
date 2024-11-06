@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/materialize.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    
+    <div class="cabecalho"><h1>Quiz Informática</h1>      
+
+    <div class="container" >
+        <h2 id="texto">Bem Vindo ao quiz de informática<br>Teste seus conhecimentos na área!</h2>
+      <!--<img src="../imgs/logo.png" alt="logo">--> 
+      <div class="questao">
+
+        <img id="logo" src="../imgs/logo2.png" alt="logo">
+    </div>
+   
+    
+        <div>
+            
+          <button id="comeca">Começar</button>
+         
+       
+
+          <!--<button id="som">Som</button>-->
+          <button  class=" modal-trigger" href="#modal2" id="instrucao">Instruções</button>
+          <button class="modal-trigger" id="creditos" href="#modal1">Créditos</button>
+        
+          </div>
+        
+          <button id="reinicia">Reiniciar</button>
+       
+        
+    </div> 
+   
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h1>Créditos</h1>
+     <p>&copy; 2023 João Lopes e Thiago Ryan.</p>
+      <h1>Fontes Utilizadas</h1>
+      <p>https://youtu.be/9jxNUSPXe0Y?si=qtKEVYWPQgI3pfg-</p>
+      
+      <p>https://youtu.be/7b6HW8-67WE?si=011xJ9jMJZQcqAY0</p>
+      <p>https://youtu.be/IV34pOplBsY?si=kiXA7kuO53vlJZ9T</p>
+      <p >https://materializecss.com/modals.html#!</p>
+      <button id="segredo">?</button>
+      <div id="video">
+        <h1>Voçê encontrou nosso Easter Egg!</h1>
+        <p>Um video ensinando a jogar nosso primeiro jogo feito em prog III</p> 
+        <video  controls>  <source src="../videos/ricardo-jogo-da-calculadora.mp4" type="video/mp4"></video></div>
+     
+    
+     
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Para Jogar clique no botão "Começar"</h4>
+      <p>O quiz é composto de 5 perguntas cada uma com 4 alternativas, caso você erre alguma questão o quiz recomeça! </p>
+      
+      </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+
+ 
+  
+
+  <audio id="Audio" >
+    <source src="../audios/tema-de-abertura-completo.mp3" type="audio/mp3">
+    
+  </audio>
+  
+  <audio id="Audioerrou" loop>
+    <source src="../audios/errou.mp3" type="audio/mp3">
+   
+  </audio>
+  <audio id="Audioacertou" loop>
+    <source src="../audios/certa.mp3" type="audio/mp3">
+   
+  </audio>
+      
+
+  
+</body>
+</html>
